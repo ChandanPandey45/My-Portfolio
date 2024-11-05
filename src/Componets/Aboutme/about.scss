@@ -1,0 +1,174 @@
+@import '../../App.scss';
+
+.about {
+  width: 100%;
+  text-align: center;
+
+  .text {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    color: orange;
+    display: inline-block;
+    border-bottom: 5px solid gray;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    @include mobile {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+
+  .wrapper {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .column-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .textContainer, .skillContainer {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    .heading {
+      font-size: 20px;
+      color: orange;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    h2{
+      @include mobile{
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+
+    button {
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      font-weight: 300;
+
+      &:hover {
+        background-color: rebeccapurple;
+        color: white;
+      }
+
+      @include mobile {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+
+    .icon {
+      font-size: 54px;
+      margin-right: 10px;
+      vertical-align: middle;
+      color: orange;
+
+      // Hide icons on mobile
+      @include mobile {
+        display: none; // Ensure icons are hidden on mobile
+      }
+    }
+  }
+
+  .skillContainer {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: orange;
+      margin-bottom: 20px;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .iconImage {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 95px;
+          height: 95px;
+
+          @include mobile {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .selected {
+    background-color: white;
+    color: black;
+  }
+}
