@@ -28,9 +28,9 @@
 
     @include mobile {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       width: 100%;
-      margin: 0;
+      margin-top: 0;
       padding: 0;
     }
   }
@@ -39,14 +39,27 @@
     display: flex;
     gap: 20px;
     flex-direction: row;
+    margin: 70px;
+    // width: 800px;
+    // height: 450px;
+    // text-align: center;
+    // justify-content: center;
+
 
     @include mobile {
+      margin-top: 0;
       flex-direction: column;
-      gap: 10px;
+      width: 300px;
+      height: 250px;
+      h2{
+       font-size: 5px;
+      }
     }
   }
 
-  .textContainer, .skillContainer {
+  .textContainer,
+  .skillContainer {
+    width: 400px;
     margin-top: 40px;
     height: 100%;
     width: 100%;
@@ -62,11 +75,12 @@
       color: orange;
 
       @include mobile {
-        font-size: 16px;
+        font-size: 10px;
       }
     }
-    h2{
-      @include mobile{
+
+    h2 {
+      @include mobile {
         display: none;
       }
     }
@@ -76,7 +90,7 @@
       margin-top: 10px;
 
       @include mobile {
-        font-size: 14px;
+        font-size: 8px;
       }
     }
   }
@@ -137,7 +151,8 @@
       margin-bottom: 20px;
 
       @include mobile {
-        font-size: 18px;
+        font-size: 10px;
+        
       }
     }
 
@@ -146,21 +161,36 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
 
       .iconImage {
         display: flex;
         gap: 10px;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+
+        // .pop-up-images {
+        //   width: 100%;
+        //   height: 100%;
+        //   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+        //   .skill:hover .pop-up-images {
+        //     transform: scale(1.2); /* Scales the image to 1.2 times its original size */
+        //     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+        //   }
+        // }
 
         img {
-          width: 95px;
-          height: 95px;
+          width: 85px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          
 
           @include mobile {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 20px;
           }
         }
       }
