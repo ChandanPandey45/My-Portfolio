@@ -7,7 +7,7 @@ const items =[
     id:1,
     title: "Chat App",
     img: '/ChatApp.png',
-    desc:""},
+    desc:"A real-time chat application with instant messaging, group chats, media sharing, and notifications. Features a responsive UI, secure authentication, and cross-device compatibility for seamless communication."},
         {id:2,
         title: "Imagistics",
         img: "/Imagistics.png",
