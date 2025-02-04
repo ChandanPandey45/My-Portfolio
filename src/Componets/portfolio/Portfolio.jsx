@@ -5,19 +5,19 @@ import {motion , useScroll , useSpring, useTransform} from 'framer-motion'
 const items =[
     {
     id:1,
-    title: "Weather Web",
-    img: '/Weather.jpg',
-    desc:" Developed a responsive weather forecast app with HTML, CSS, and JavaScript, integrating a weather API for real-time updates. Enabled users to search cities for instant weather details, including temperature, wind speed, and humidity. This project highlights skills in front-end design, API integration, and interactive UI development. "},
+    title: "Chat App",
+    img: '/ChatApp.png',
+    desc:""},
         {id:2,
-        title: "Real State",
-        img: "/Real State.jpg",
-        desc:"Developed a real estate web platform featuring property listings for buying, selling, and renting. Integrated a real-time chatbot to assist users with inquiries, provide property recommendations, and enhance user interaction. This project showcases skills in full-stack development, real-time data handling, and AI-driven conversational interfaces." 
+        title: "Imagistics",
+        img: "/Imagistics.png",
+        desc:"Developed a real time web platform featuring the power to convert the words into Image using a API by using the Tokens for each time to Use." 
         }, 
         {
             id:3,
-            title: "Password Menia",
-            img: "/Password Menia.png",
-            desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam est aperiam natus dolor et corporis sit fuga quos libero maxime optio blanditiis officiis harum doloremque ipsa, illo eum reiciendis eligendi" 
+            title: "Weather App",
+            img: "/Weather.jpg",
+            desc:"Developed a responsive weather forecast app with HTML, CSS, and JavaScript, integrating a weather API for real-time updates. Enabled users to search cities for instant weather details, including temperature, wind speed, and humidity. This project highlights skills in front-end design, API integration, and interactive UI development. " 
             }, 
             {
                 id:4,
